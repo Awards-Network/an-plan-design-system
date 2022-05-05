@@ -9,5 +9,7 @@
     "serve": "npx backlight@latest serve lIfUpDAB33t2rvvBns3D --open"
   },
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "@storefront-ui/vue": "^0.13.1"
+  }
 }
