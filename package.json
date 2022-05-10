@@ -10,6 +10,8 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@storefront-ui/vue": "^0.13.1"
+    "@storefront-ui/shared": "^0.13.1",
+    "@storefront-ui/vue": "^0.13.1",
+    "vue": "^2.6.12"
   }
 }

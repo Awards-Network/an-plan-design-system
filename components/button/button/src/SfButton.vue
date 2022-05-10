@@ -25,7 +25,7 @@
 </template>
 <script>
 import { focus } from '~/utilities/directives';
-import SfLink from '~/link/src/SfLink.vue';
+import SfLink from '~/components/link/src/SfLink.vue';
 export default {
   name: 'SfButton',
   inject: {

@@ -10,9 +10,9 @@
   </component>
 </template>
 <script>
-import { focus } from "../../../utilities/directives";
+import { focus } from '~/utilities/directives';
 export default {
-  name: "SfLink",
+  name: 'SfLink',
   directives: { focus },
   props: {
     link: {
@@ -23,7 +23,7 @@ export default {
   computed: {
     isExternal() {
       return (
-        typeof this.link === "string" && this.link.search(/(^\/|^#)/g) === -1
+        typeof this.link === 'string' && this.link.search(/(^\/|^#)/g) === -1
       );
     },
     isNativeLinkTag() {
@@ -32,15 +32,15 @@ export default {
     urlTag() {
       return this.isNativeLinkTag
         ? { href: this.link }
-        : { to: this.link || "" };
+        : { to: this.link || '' };
     },
     linkComponentTag() {
-      const routerLink = this.$nuxt ? "nuxt-link" : "router-link";
-      return this.isNativeLinkTag ? "a" : routerLink;
+      const routerLink = this.$nuxt ? 'nuxt-link' : 'router-link';
+      return this.isNativeLinkTag ? 'a' : routerLink;
     },
   },
 };
 </script>
 <style lang="scss">
-@import "~@storefront-ui/shared/styles/components/atoms/SfLink.scss";
+@import '~@storefront-ui/shared/styles/components/atoms/SfLink.scss';
 </style>
