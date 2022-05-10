@@ -24,10 +24,10 @@
   </component>
 </template>
 <script>
-import { focus } from "../../../utilities/directives";
-import SfLink from "../SfLink/SfLink.vue";
+import { focus } from '~/utilities/directives';
+import SfLink from '~/link/src/SfLink.vue';
 export default {
-  name: "SfButton",
+  name: 'SfButton',
   inject: {
     components: {
       default: { SfLink },
@@ -43,8 +43,8 @@ export default {
     },
     type: {
       type: String,
-      default: "button",
-      validator: (value) => ["button", "submit", "reset"].includes(value),
+      default: 'button',
+      validator: (value) => ['button', 'submit', 'reset'].includes(value),
     },
     link: {
       type: [String, Object],
@@ -60,5 +60,5 @@ export default {
 };
 </script>
 <style lang="scss">
-@import "~@storefront-ui/shared/styles/components/atoms/SfButton.scss";
+@import '~@storefront-ui/shared/styles/components/atoms/SfButton.scss';
 </style>
