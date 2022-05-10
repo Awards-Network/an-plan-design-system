@@ -1,10 +1,6 @@
 {
   "packages": {
-    "dir": "",
-    "menu": [
-      ["TOKENS", []],
-      ["COMPONENTS", ["button", "heading"]],
-      ["INFRASTRUCTURE", []]
-    ]
+    "dir": "components",
+    "menu": [["COMPONENTS", ["button", "heading"]]]
   }
 }
