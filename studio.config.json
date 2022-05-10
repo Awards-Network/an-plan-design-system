@@ -1,6 +1,6 @@
 {
   "packages": {
     "dir": "components/",
-    "menu": [["Components", ["Button", "Heading"]]]
+    "menu": [["Components", ["button", "heading", "link"]]]
   }
 }
